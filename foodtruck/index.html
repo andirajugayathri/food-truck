@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLink Food Truck Insurance | Protect Your Passion</title>
+    <meta name="description"
+        content="Insurance for food trucks, trailers, and vans. Fast, fun, and fuss-free cover for your mobile food business.">
+    <link rel="icon" href="assets/Food Truck Ins_Logo_Tran.png" type="image/png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/Food Truck Ins_Logo_Tran.png" alt="iLink Food Truck Insurance">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#cover">What We Cover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#bottom-contact" class="btn-nav">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="video-background">
+            <video autoplay loop playsinline poster="assets/hero-poster.png" id="hero-video">
+                <source src="assets/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <audio id="bg-music" loop>
+                <source src="assets/holiday-beach-music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <button id="muteToggle" class="mute-toggle" aria-label="Mute Video">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <div class="container hero-content" id="form">
+
+            <div class="hero-text">
+                <h1 class="animate-pop">iLink Food Truck Insurance</h1>
+                <h2 class="animate-slide-up" style="margin-bottom: 1rem;"> <span class="text-gradient">Protecting Your
+                        Passion on Wheels</span></h2>
+
+                <div class="hero-buttons animate-slide-up delay-1">
+                    <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="contact-form-container hero-form" id="quoteForm">
+                <button class="close-form-btn" id="closeFormBtn" aria-label="Close Quote Form"><i
+                        class="fas fa-times"></i></button>
+                <div class="form-header">
+                    <h3>Quick Quote</h3>
+                    <p>Get covered in minutes</p>
+                </div>
+                <form class="simple-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Company Name">
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Contact Number" required>
+                        <input type="email" placeholder="Email ID" required>
+                    </div>
+                    <div class="form-row">
+                        <select required>
+                            <option value="" disabled selected>Coverage Required</option>
+                            <option value="food-truck">Food Truck</option>
+                            <option value="trailer">Trailer</option>
+                            <option value="van">Van</option>
+                            <option value="liability">Liability Only</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Get My Quote</button>
+                </form>
+            </div>
+            <div class="open-form-container" id="openFormContainer" style="display: none;">
+                <button class="btn btn-primary btn-lg pulse-animation" id="openFormBtn">
+                    <i class="fas fa-file-invoice-dollar"></i> Get a Quote
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Quote Section (Visible only on mobile) -->
+    <section id="mobile-quote-section" class="section mobile-quote-section" style="display: none;">
+        <div class="container">
+            <div class="contact-form-container" id="quoteFormMobile">
+                <div class="form-header">
+                    <h3>Quick Quote</h3>
+                    <p>Get covered in minutes</p>
+                </div>
+                <form class="simple-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Company Name">
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Contact Number" required>
+                        <input type="email" placeholder="Email ID" required>
+                    </div>
+                    <div class="form-row">
+                        <select required>
+                            <option value="" disabled selected>Coverage Required</option>
+                            <option value="food-truck">Food Truck</option>
+                            <option value="trailer">Trailer</option>
+                            <option value="van">Van</option>
+                            <option value="liability">Liability Only</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Get My Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are (Scrapbook Style) -->
+    <section id="about" class="section about-section scrapbook-theme">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Who We Are</span>
+                <h2 class="handwritten-title">From Our Kitchen to Yours</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="scrapbook-text">
+                        <p class="lead">"We’ve spent over 20 years insuring cafés..."</p>
+                        <p>We’ve spent over 20 years insuring cafés, restaurants, bars and everything delicious in
+                            between, so expanding into Food Truck & Food Trailer Insurance was a natural next step.</p>
+                        <p>If it cooks, steams, fries, grills, serves or sizzles on wheels… we’ve probably insured it.
+                        </p>
+                        <p class="handwritten-note">Fast, fun and full of flavour!</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="scrapbook-photos side-by-side">
+                        <div class="polaroid p-left">
+                            <div class="tape"></div>
+                            <img src="assets/images/2.png" alt="Food Truck Life">
+                            <div class="caption">On the Road</div>
+                        </div>
+                        <div class="polaroid p-right">
+                            <div class="tape"></div>
+                            <img src="assets/images/1.png" alt="Serving Smiles">
+                            <div class="caption">Serving Smiles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unique Flavor Quote -->
+            <div class="flavor-quote-container text-center">
+                <div class="flavor-quote">
+                    "We know the mobile food world is <span class="highlight-text">fast</span>, <span
+                        class="highlight-text">fun</span> and <span class="highlight-text">full of flavour</span>—so
+                    your insurance should be too."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Cover -->
+    <section id="cover" class="section cover-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-white">What We Cover</span>
+                <h2 class="text-white">We Insure:</h2>
+                <p class="text-white-50">Whether you’re serving tacos at a night market, brewing coffee at sunrise or
+                    running a whole fleet of tasty vans, <br> we’ve got you covered.</p>
+
+            </div>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="icon-box"><img src="assets/food-truck.png" alt="Food Trucks"></div>
+                    <h3>Food Trucks</h3>
+                    <p>Food trucks of all kinds (big, small and everything in between)</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><img src="assets/food trailers.png" alt="Food Trailers"></div>
+                    <h3>Food Trailers</h3>
+                    <p>Food trailers & retrofitted caravans</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><img src="assets/tehem vintage.png" alt="Themed & Vintage"></div>
+                    <h3>Themed & Vintage</h3>
+                    <p>Themed and vintage rigs (Kombis, promo vans, quirky builds—bring it on!)</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box"><img src="assets/coffee vans.png" alt="Coffee & Vans"></div>
+                    <h3>Coffee & Vans</h3>
+                    <p>Coffee vans, pie vans, seafood vans… basically any tasty operation on wheels</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="competitive-prices-text">
+                    <i class="fas fa-check text-warning"></i> All at competitive prices that won’t eat into your profits
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- One Stop Shop (Menu Board Style) -->
+    <section class="section menu-board-section">
+        <div class="container">
+            <div class="menu-board">
+                <div class="menu-header">
+                    <h2>Your One-Stop Insurance Shop</h2>
+                    <p>Think of us as your backstage crew: You cook, serve and create the magic — <br> we make sure
+                        you’re
+                        protected while doing it.</p>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-column">
+                        <h3><span class="highlight-title">We Cover</span> <span class="small">(The Essentials)</span>
+                        </h3>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="item-name">Food Trucks and Trailers</span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="item-name">Food & Coffee vans</span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="item-name">Fit-out, Contents, and Stock (Incl. Signage) </span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="item-name">Cash & Money</span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-column">
+                        <h3><span class="highlight-title">More Cover</span> <span class="small">(The Good Stuff)</span>
+                        </h3>
+                        <ul class="menu-items">
+                            <li>
+                                <span class="item-name">Machinery Breakdown</span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="item-name">Public & Products Liability</span>
+                                <span class="item-check"><i class="fas fa-check"></i></span>
+                            </li>
+                        </ul>
+                        <div class="menu-note">
+                            <p><strong>Chef's Note:</strong> Simple, flexible, all-in-one cover packages, with monthly
+                                payment plan options. Fast, friendly, and fuss-free — just how insurance should be.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You're Covered For (Accordion/Grid) -->
+    <section class="section details-section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>What You’re Covered For</h2>
+                <p>The big stuff, the small stuff, and the unexpected stuff.</p>
+            </div>
+            <div class="grid-features">
+                <div class="feature-item">
+                    <i class="fas fa-fire"></i>
+                    <h4>Fire, Theft or Explosion</h4>
+                    <p>Comprehensive protection for major risks.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-ninja"></i>
+                    <h4>Malicious Damage</h4>
+                    <p>Not everyone appreciates good food… we cover that.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Public & Products Liability</h4>
+                    <p>Serving food comes with risks, we handle them.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-car-crash"></i>
+                    <h4>Collision or Overturning</h4>
+                    <p>Protection when things go sideways.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-route"></i>
+                    <h4>Damage in Transit</h4>
+                    <p>Bumps happen! We cover damage while you're moving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Love Us (Aussie Road Trip Style) -->
+    <section class="section why-us-section road-trip-theme">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Why Choose Us</span>
+                <h2>Why Food Truck Owners Love Us</h2>
+                <p>We're with you every kilometre of the journey.</p>
+            </div>
+
+            <div class="road-trip-container">
+                <div class="road-path"></div>
+                <div class="moving-truck">
+                    <img src="assets/food-truck-top-view.png" alt="Moving Food Truck">
+                </div>
+
+                <!-- Sign 1: New Vehicle -->
+                <div class="road-stop stop-left">
+                    <div class="road-sign sign-warning">
+                        <div class="sign-content">
+                            <i class="fas fa-truck-pickup"></i>
+                            <h4>New Vehicle Replacement</h4>
+                            <p>First Two Years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign 2: Market Value -->
+                <div class="road-stop stop-right">
+                    <div class="road-sign sign-direction">
+                        <div class="sign-content">
+                            <img src="assets/market.png" alt="Market Value" class="sign-icon-img">
+                            <h4>Market or Agreed Value</h4>
+                            <p>Options to suit your setup </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign 3: Towing -->
+                <div class="road-stop stop-left">
+                    <div class="road-sign sign-warning">
+                        <div class="sign-content">
+                            <i class="fas fa-truck-moving"></i>
+                            <h4>Cover for Recovery & Towing</h4>
+                            <p>We've got your back</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign 4: Signage -->
+                <div class="road-stop stop-right">
+                    <div class="road-sign sign-direction">
+                        <div class="sign-content">
+                            <img src="assets/art.png" alt="Signage and Artwork" class="sign-icon-img">
+                            <h4>Signage & Artwork</h4>
+                            <p>We'll even cover that! </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign 5: Australia Wide -->
+                <div class="road-stop stop-center">
+                    <div class="road-sign sign-aussie">
+                        <div class="sign-content">
+                            <i class="fas fa-globe-asia"></i>
+                            <h4>Australia-Wide Cover</h4>
+                            <p>Go where the crowds are!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign 6: Flexible Options -->
+                <div class="road-stop stop-center" style="margin-top: 50px;">
+                    <div class="road-sign sign-warning">
+                        <div class="sign-content">
+                            <i class="fas fa-sliders-h"></i>
+                            <h4>Flexible Options</h4>
+                            <p>Based on when and how you operate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional Extras (The Bonus Sauce) -->
+            <!-- Optional Extras (The Bonus Sauce) -->
+            <div class="sauce-panel-section mt-5">
+                <div class="sauce-panel">
+                    <div class="section-header text-center">
+                        <h3 class="text-white">Optional Extras <span class="small text-white-50">(The Bonus
+                                Sauce)</span></h3>
+                    </div>
+
+                    <div class="sauce-panel-grid">
+                        <div class="sauce-pill">
+                            <i class="fas fa-fire-alt"></i>
+                            <span>Running a deep fryer? No worries — we can cover that.</span>
+                        </div>
+                        <div class="sauce-pill">
+                            <i class="fas fa-tools"></i>
+                            <span>Cover for both vehicle + fit-out</span>
+                        </div>
+                        <div class="sauce-pill">
+                            <i class="fas fa-box-open"></i>
+                            <span>Transit of Stock & Portable Equipment</span>
+                        </div>
+                        <div class="sauce-pill">
+                            <i class="fas fa-gem"></i>
+                            <span>Protection for high-value, custom, or specialty builds</span>
+                        </div>
+                        <div class="sauce-pill">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Loss of Income Cover</span>
+                        </div>
+                        <div class="sauce-pill">
+                            <i class="fas fa-id-card"></i>
+                            <span>All licensed drivers are accepted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Contact Section (Custom Split Layout) -->
+    <section id="bottom-contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge">Get in Touch</span>
+                <h2>Ready to Start?</h2>
+                <p>Fill out the form below or contact us directly.</p>
+            </div>
+
+            <div class="split-layout">
+                <div class="split-image">
+                    <img src="assets/images/4.png" alt="Food Truck">
+                </div>
+                <div class="split-form">
+                    <!-- Contact Form (Duplicated from Hero) -->
+                    <div class="contact-form-container" style="max-width: 100%; transform: none;">
+                        <div class="form-header">
+                            <h3>Quick Quote</h3>
+                            <p>Get covered in minutes</p>
+                        </div>
+                        <form class="simple-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="Full Name" required>
+                                <input type="text" placeholder="Company Name">
+                            </div>
+                            <div class="form-row">
+                                <input type="tel" placeholder="Contact Number" required>
+                                <input type="email" placeholder="Email ID" required>
+                            </div>
+                            <div class="form-row">
+                                <select required>
+                                    <option value="" disabled selected>Coverage Required</option>
+                                    <option value="food-truck">Food Truck</option>
+                                    <option value="trailer">Trailer</option>
+                                    <option value="van">Van</option>
+                                    <option value="liability">Liability Only</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg mt-3">Get My Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container text-center">
+            <h2 class="animate-bounce">Ready to Roll?</h2>
+            <p>Get your quote today and get back to cooking!</p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#form">Get a Quote</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <p class="copyright">&copy; 2025 iLink Food Truck Insurance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

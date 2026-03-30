@@ -1,0 +1,4 @@
+[2025-12-02 00:50:36] Zoho Raw Response: {"error":"invalid_code"}
+[2025-12-02 00:50:36] Zoho Error: invalid_code
+[2025-12-02 01:07:25] Zoho Raw Response: {"access_token":"1000.e2751dc2ef25c8cc92010adf21d7955c.39e23af835dd7e8cb8c64dd72575ca38","refresh_token":"1000.b1bf97a9d84d0e0e10d2210f5ed04e3e.01347eecb9a88468259e3672d994be67","scope":"ZohoCRM.modules.leads.all","api_domain":"https://www.zohoapis.com.au","token_type":"Bearer","expires_in":3600}
+[2025-12-02 01:07:25] Token saved successfully.

@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Truck Insurance Australia | Protect Your Passion on Wheels</title>
+  <meta name="description"
+    content="Tailored food truck insurance for Australian operators. Cover your vehicle, fit-out, public liability, and income. Get a fast quote today." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/webp" sizes="48x48" href="/favicon.webp" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Open+Sans:wght@400;600;700&family=Inter:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet" media="print" onload="this.media = 'all'" />
+
+  <!-- Icons -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index2.css" />
+
+  <link rel="canonical" href="https://foodtruckinsurance.com.au/index2.html" />
+  <link rel="preload" as="image" href="assets/hero-poster.webp" fetchpriority="high">
+
+  <meta name="google-site-verification" content="nEyloXKjUVuiM9DTyxJ5RnHQcfN_oiZ00jUdY6MnLyM" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWH4H9NRTN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-EWH4H9NRTN");
+  </script>
+</head>
+
+<body class="idx2-page">
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/Food Truck Ins_Logo_Tran.webp" alt="Food Truck Insurance" width="72" height="60" />
+        </a>
+        <a href="tel:1300170328" class="mobile-nav-number"><i class="fas fa-phone-alt"></i> 1300 170 328</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#cover">What We Cover</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#form" class="btn-nav">Get a Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <header id="home" class="hero">
+      <div class="video-background">
+        <video autoplay muted loop playsinline poster="assets/hero-poster.webp" id="hero-video">
+          <source src="https://pub-b20fe231e4b74c4da0db6ef14285b391.r2.dev/foodtruck.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <audio id="bg-music" loop>
+          <source src="assets/holiday-beach-music.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      <button id="muteToggle" class="mute-toggle" aria-label="Unmute Video">
+        <i class="fas fa-volume-mute"></i>
+      </button>
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <h1 class="animate-pop">Food Truck Insurance</h1>
+          <h2 class="animate-slide-up idx2-hero-title-mb">
+            <span class="text-gradient">Protecting Your Passion on Wheels</span>
+          </h2>
+          <p class="animate-slide-up delay-1 idx2-hero-description">
+            Tailored food truck insurance for Australian operators covering your vehicle, fit-out, equipment, public
+            liability, and income.
+          </p>
+          <div class="hero-buttons animate-slide-up delay-2">
+
+            <a href="#form" class="btn btn-primary desktop-hidden">Get Quote <i class="fas fa-arrow-right"></i></a>
+            <a href="#importance" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="contact-form-container hero-form" id="quoteForm">
+          <div class="form-header">
+            <h3>Quick Quote</h3>
+            <p>Get covered in minutes</p>
+          </div>
+          <form class="simple-form" id="form" action="zoho/forms/sendmail.php" method="POST">
+            <div class="form-row">
+              <input type="text" name="full_name" placeholder="Full Name" required />
+              <input type="text" name="company_name" placeholder="Company Name" />
+            </div>
+            <div class="form-row">
+              <input type="tel" name="contact_number" placeholder="Contact Number" required />
+              <input type="email" name="email_id" placeholder="Email ID" required />
+            </div>
+            <div class="form-row">
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>Coverage Required</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <label class="custom-option">
+                      <input type="checkbox" name="coverage_required[]" value="food-truck-van" />
+                      Food Truck/Van
+                    </label>
+                    <label class="custom-option">
+                      <input type="checkbox" name="coverage_required[]" value="liability" />
+                      Public and Products Liability
+                    </label>
+                    <label class="custom-option">
+                      <input type="checkbox" name="coverage_required[]" value="business-interruption" />
+                      Business Interruption
+                    </label>
+                    <label class="custom-option">
+                      <input type="checkbox" name="coverage_required[]" value="personal-accident" />
+                      Personal Accident and Sickness cover
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg mt-3">
+              Get My Quote
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- NEW SECTION: Why Food Truck Insurance Is Important -->
+    <section id="importance" class="idx2-section idx2-bg-white">
+      <div class="idx2-container">
+        <div class="idx2-split">
+          <div class="idx2-split-content">
+            <h2 class="idx2-h2 idx2-text-left" style="margin-bottom: 1.5rem">Why Food Truck Insurance Is Important</h2>
+            <p class="idx2-lead idx2-text-left">
+              Operating a food truck comes with unique risks that traditional insurance policies simply don’t cover.
+              From kitchen fires and equipment breakdowns to customer injuries or food-related illness, a single
+              incident can lead to significant financial loss.
+            </p>
+            <p class="idx2-lead idx2-text-left">
+              Food truck insurance helps protect your income, your assets, and your reputation — so you can focus on
+              running your business with confidence.
+            </p>
+          </div>
+          <div class="idx2-split-image">
+            <img src="assets/images/2.webp" alt="Food Truck Operations" width="600" height="400" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="idx2-section idx2-bg-cream">
+      <div class="idx2-container-wide">
+        <div class="idx2-text-center">
+          <h2 class="idx2-h2">Who Needs Food Truck Insurance?</h2>
+          <p class="idx2-lead">If you operate any type of mobile food business in Australia, you should have the right
+            insurance in place. This includes:</p>
+
+          <div class="container idx2-grid-3-strict idx2-mt-md">
+            <div class="idx2-card idx2-card-horizontal">
+              <div class="idx2-icon-box"><i class="fas fa-truck"></i></div>
+              <h3 class="idx2-h3">Food truck owners</h3>
+            </div>
+            <div class="idx2-card idx2-card-horizontal">
+              <div class="idx2-icon-box"><i class="fas fa-coffee"></i></div>
+              <h3 class="idx2-h3">Coffee van operators</h3>
+            </div>
+            <div class="idx2-card idx2-card-horizontal">
+              <div class="idx2-icon-box"><i class="fas fa-trailer"></i></div>
+              <h3 class="idx2-h3">Food trailer businesses</h3>
+            </div>
+            <div class="idx2-card idx2-card-horizontal">
+              <div class="idx2-icon-box"><i class="fas fa-utensils"></i></div>
+              <h3 class="idx2-h3">Mobile catering services</h3>
+            </div>
+            <div class="idx2-card idx2-card-horizontal">
+              <div class="idx2-icon-box"><i class="fas fa-store"></i></div>
+              <h3 class="idx2-h3">Market and festival vendors</h3>
+            </div>
+          </div>
+
+          <p class="idx2-lead mt-5">
+            Even part-time or weekend operators need cover whenever they are trading or on the road.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION: Why Australian Food Truck Operators Choose Us -->
+    <section class="idx2-section idx2-bg-white">
+      <div class="idx2-container">
+        <div class="idx2-split idx2-mb-lg">
+          <div class="idx2-split-content">
+            <h2 class="idx2-h2 idx2-h2-left">Why Australian Food Truck Operators Choose Us</h2>
+            <p class="idx2-lead idx2-text-left">
+              Food truck insurance in Australia isn’t one-size-fits-all — and choosing the wrong policy can leave your
+              business exposed when it matters most.
+            </p>
+            <p class="idx2-lead idx2-text-left">
+              A coffee van has very different risks compared to a deep-fryer food truck. A weekend market operator has
+              different needs to a multi-vehicle fleet. That’s why we provide fully customised food truck insurance
+              policies — designed to cover exactly what your business needs, without paying for unnecessary extras.
+            </p>
+            <p class="idx2-lead idx2-text-left">
+              As specialist food truck insurance brokers, we understand the real-world challenges of running a mobile
+              food business in Australia. We don’t just sell insurance — we help keep your business moving.
+            </p>
+          </div>
+          <div class="idx2-split-image">
+            <img src="assets/images/why-choose-food-truck.webp" alt="Why Choose Us" width="600" height="600" />
+          </div>
+        </div>
+
+        <h3 class="idx2-h3-large">Here’s what sets us apart:</h3>
+
+        <div class="idx2-grid">
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-file-contract"></i></div>
+              <h3 class="idx2-h3">Council & event compliance</h3>
+            </div>
+            <p>We ensure your policy meets Australian council and event requirements — including the standard $20 million public liability insurance required by most markets and festivals.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="idx2-h3">Built for mobile food risks</h3>
+            </div>
+            <p>From fire and equipment damage to food contamination and theft, our policies are tailored specifically for food trucks, trailers, and coffee vans.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-bolt"></i></div>
+              <h3 class="idx2-h3">Fast claims when you need them</h3>
+            </div>
+            <p>If your truck is off the road, your income stops. We prioritise fast, hassle-free claims to get you back trading as quickly as possible.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-map-marked-alt"></i></div>
+              <h3 class="idx2-h3">Australia-wide expertise</h3>
+            </div>
+            <p>We understand the different rules and requirements across NSW, VIC, QLD, WA, SA, TAS, ACT and NT, so you’re always compliant wherever you operate.</p>
+          </div>
+        </div>
+
+        <div class="idx2-text-center idx2-mt-lg">
+          <p class="idx2-lead">
+            Whether you’re just starting out or running a growing fleet, we make it simple to get the right cover — quickly, affordably, and with confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: What You're Covered For -->
+    <section class="idx2-section idx2-bg-cream" id="cover">
+      <div class="idx2-container">
+        <h2 class="idx2-h2">What You're Covered For</h2>
+        <div class="idx2-text-center">
+          <p class="idx2-lead">
+            When you take out food truck insurance in Australia, you need more than just basic vehicle cover — you need protection for your entire business on wheels. Our policies are designed to cover the real risks food truck operators face every day, whether you're on the road, at a market, or parked overnight.
+          </p>
+        </div>
+
+        <div class="idx2-grid-3 idx2-mb-lg">
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-fire-alt"></i></div>
+              <h3 class="idx2-h3">Fire, Theft & Explosion</h3>
+            </div>
+            <p>Your food truck is a significant investment, and so is everything inside it. Our cover protects your vehicle, equipment and stock against fire, theft, and accidental explosion — including high-risk cooking setups like deep fryers and gas appliances.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-car-crash"></i></div>
+              <h3 class="idx2-h3">Collision & Accidental Damage</h3>
+            </div>
+            <p>Whether you're driving between events or setting up at a busy location, accidents can happen. You're covered for damage caused by collisions, reversing incidents, or unexpected impacts — helping you get back on the road quickly.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="idx2-h3">Public & Product Liability ($20M)</h3>
+            </div>
+            <p>Serving the public comes with responsibility. This cover protects you if a customer is injured near your truck or becomes ill from your food. Most councils and event organisers in Australia require at least $20 million public liability cover — and we make sure you meet that standard.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-tools"></i></div>
+              <h3 class="idx2-h3">Equipment & Fit-Out Protection</h3>
+            </div>
+            <p>From grills and fryers to coffee machines and refrigeration, your fit-out is the heart of your business. We cover both fixed and portable equipment, including custom-built interiors, signage, and essential tools of trade.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-map-marked-alt"></i></div>
+              <h3 class="idx2-h3">Australia-Wide Cover</h3>
+            </div>
+            <p>Your business isn’t tied to one location — and neither is your insurance. Whether you're trading locally or travelling interstate for festivals and events, your policy moves with you, giving you complete peace of mind across Australia.</p>
+          </div>
+        </div>
+
+        <div class="idx2-divider">
+          <h3 class="idx2-h2-sub">Optional Extras: Customise Your Food Truck Insurance for Complete Protection</h3>
+          <div class="idx2-text-center">
+            <p class="idx2-lead">
+              Every food truck business is different — and your insurance should reflect that. Our optional extras allow
+              you to tailor your policy to match your exact setup, risks, and growth plans. Whether you operate solo or
+              run a fleet, these add-ons ensure you’re fully protected where it matters most.
+            </p>
+          </div>
+
+          <div class="idx2-grid-2 idx2-mt-md">
+            <div class="idx2-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4 class="idx2-h3 idx2-h3-small">High-risk equipment cover</h4>
+                <p>Protects deep fryers, grills, and high-risk cooking equipment from fire, damage, and costly
+                  breakdowns.</p>
+              </div>
+            </div>
+            <div class="idx2-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4 class="idx2-h3 idx2-h3-small">Transit cover</h4>
+                <p>Covers your food, stock, and portable equipment against loss or damage while travelling between
+                  locations.</p>
+              </div>
+            </div>
+            <div class="idx2-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4 class="idx2-h3 idx2-h3-small">Loss of income</h4>
+                <p>Replaces lost income if your food truck can’t operate due to an insured event like fire or accident.
+                </p>
+              </div>
+            </div>
+            <div class="idx2-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4 class="idx2-h3 idx2-h3-small">Workers’ compensation</h4>
+                <p>Covers employee injuries, medical costs, and lost wages to keep your business compliant and
+                  protected.</p>
+              </div>
+            </div>
+            <div class="idx2-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4 class="idx2-h3 idx2-h3-small">Fleet cover</h4>
+                <p>Simplifies insurance and reduces costs by covering multiple food trucks or vehicles under one
+                  flexible policy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION: What Affects the Cost of Food Truck Insurance? -->
+    <section class="idx2-section idx2-bg-white">
+      <div class="idx2-container">
+        <h2 class="idx2-h2">What Affects the Cost of Food Truck Insurance?</h2>
+        <div class="idx2-text-center">
+          <p class="idx2-lead">Several key factors influence how much you’ll pay for food truck insurance:</p>
+        </div>
+
+        <div class="idx2-grid-3">
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-truck-moving"></i></div>
+              <h3 class="idx2-h3">Truck Value</h3>
+            </div>
+            <p>The higher the value of your food truck, trailer, or van, the more it costs to insure. This includes not
+              just the vehicle itself, but also your custom fit-out and installed equipment.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-utensils"></i></div>
+              <h3 class="idx2-h3">Equipment Type</h3>
+            </div>
+            <p>The type of cooking equipment you use plays a big role in pricing. Deep fryers and open flames are higher
+              risk (higher premium), while coffee machines or cold prep are lower risk (lower premium).</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-chart-line"></i></div>
+              <h3 class="idx2-h3">Business Turnover</h3>
+            </div>
+            <p>Higher turnover means more customers and increased exposure to risk, which can increase your public
+              liability premium.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <h3 class="idx2-h3">Operating Location</h3>
+            </div>
+            <p>Where you trade and where you park overnight matters. Busy events and unsecured parking locations can
+              increase costs, while secure storage can help reduce them.</p>
+          </div>
+          <div class="idx2-card">
+            <div class="idx2-card-header">
+              <div class="idx2-icon-box"><i class="fas fa-history"></i></div>
+              <h3 class="idx2-h3">Claims History</h3>
+            </div>
+            <p>If you have a clean claims record, you’re more likely to receive lower premiums over time. Previous
+              claims may increase your insurance cost.</p>
+          </div>
+          <div class="idx2-card"
+            style="background: var(--idx2-bg-cream); border: 2px dashed var(--idx2-primary); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <h3 class="idx2-h3">How to Get the Best Price</h3>
+            <p>Request a personalised quote. We compare multiple insurers to find you the right cover at the most
+              competitive rate.</p>
+            <a href="#form" class="idx2-btn-accent idx2-mt-md">Get Fast Quote <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: How to Get Covered -->
+    <section class="idx2-section idx2-bg-white" id="how-to">
+      <div class="idx2-container">
+        <h2 class="idx2-h2">How to Get Food Truck Insurance in Australia</h2>
+        <div class="idx2-text-center">
+          <p class="idx2-lead">Getting food truck insurance in Australia doesn’t need to be complicated. We’ve
+            streamlined the process so you can get covered quickly and get back to doing what you do best — serving
+            great food.</p>
+        </div>
+
+        <div class="idx2-process-row idx2-mt-lg">
+          <div class="idx2-process-image-box">
+            <img src="assets/images/vibrant_food_truck.png" alt="Food Truck Insurance Process Australia">
+          </div>
+          <div class="idx2-process-list">
+            <div class="idx2-process-item">
+              <div class="idx2-process-icon"><i class="fas fa-file-invoice"></i></div>
+              <div class="idx2-process-content">
+                <h3 class="idx2-h3">Request a Fast Quote</h3>
+                <p>Start by filling out our quick online quote form or calling our team. It takes less than 3 minutes to
+                  get started. We’ll ask a few simple questions about your food truck, trailer, or coffee van to
+                  understand your needs.</p>
+              </div>
+            </div>
+            <div class="idx2-process-item">
+              <div class="idx2-process-icon"><i class="fas fa-edit"></i></div>
+              <div class="idx2-process-content">
+                <h3 class="idx2-h3">Tell Us About Your Business</h3>
+                <p>Provide details about your vehicle, fit-out, cooking equipment, and where you operate (markets,
+                  events, street trading, etc.). This helps us tailor a food truck insurance policy that fits your
+                  exact business — no unnecessary extras.</p>
+              </div>
+            </div>
+            <div class="idx2-process-item">
+              <div class="idx2-process-icon"><i class="fas fa-search-dollar"></i></div>
+              <div class="idx2-process-content">
+                <h3 class="idx2-h3">Receive Your Tailored Insurance Quote</h3>
+                <p>Our specialist brokers compare options from leading insurers to find you the best cover at the most
+                  competitive price. You’ll receive a customised quote that includes everything from public liability
+                  to equipment and vehicle cover.</p>
+              </div>
+            </div>
+            <div class="idx2-process-item">
+              <div class="idx2-process-icon"><i class="fas fa-check-double"></i></div>
+              <div class="idx2-process-content">
+                <h3 class="idx2-h3">Get Covered — Often Same Day</h3>
+                <p>Once you’re happy with your quote, simply accept your policy and you can be covered the same day.
+                  We’ll issue your Certificate of Currency quickly, so you’re ready for councils, events, and festivals
+                  across Australia.</p>
+              </div>
+            </div>
+              <div class="idx2-mt-md text-center">
+              <a href="#form" class="idx2-btn-accent">Get Your Free Quote Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Advisor FAQs -->
+    <section class="idx2-section idx2-bg-cream" id="faq">
+      <div class="idx2-container">
+        <div class="idx2-text-center">
+          <h2 class="idx2-h2">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="idx2-faq-container idx2-mt-lg">
+          
+          <!-- 1. Best Insurance (Mobile) -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What is the best insurance for mobile food truck? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p><strong>Advisor's Take:</strong> The "best" insurance is the type of pack that includes <strong>Business</strong> and <strong>Vehicle</strong>.</p>
+                <p>You can't just buy 3rd Party Property as a truckie, and NOT have Public Liability for your customers. A high-end policy would look something like this:</p>
+                <ul>
+                  <li><strong>Commercial Motor:</strong> For Comprehensive — Replaces or repairs your truck if damaged and covers loss of the insured vehicle (theft of truck).</li>
+                  <li><strong>Public &amp; Products Liability:</strong> If a customer slips or becomes ill from your food, you’ll be protected.</li>
+                  <li><strong>Business Interruption:</strong> Helps you maintain cash flow if you are unable to trade because of an insured event.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Cost (Australia) -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">How much is food truck insurance cost in Australia? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p><strong>Advisor's Take:</strong> It depends, but generally somewhere between <strong>$800 and $2,500+ per year</strong>.</p>
+                <p>Think of it like build cost: a stripped-back coffee van is cheaper to insure than a big truck with deep fryers and grills. Key factors include:</p>
+                <ul>
+                  <li><strong>Your vehicle &amp; gear value:</strong> Make sure you are sufficiently covered for the entire replacement cost.</li>
+                  <li><strong>Your Menu:</strong> Frying foods in hot oil (fryers) is riskier than steaming dumplings.</li>
+                  <li><strong>Location:</strong> Where you trade and leave the truck overnight.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Public Liability Cost -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">How much is a $20 million public liability insurance? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p><strong>Advisor's Take:</strong> Public Liability will cost you between <strong>$400 - $600/year</strong> for a standalone policy.</p>
+                <p>But the good news is most food truckers tie this in with their vehicle insurance for a discount. <strong>Hint:</strong> 99% of councils and event organisers across Australia demand at least <strong>$20 Million</strong> coverage to allow you to trade - don’t settle for less!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Best Insurance (General) -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What is the best insurance for a food truck? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p><strong>Advisor's Take:</strong> The "best" insurance is a comprehensive pack that covers both your <strong>Business</strong> and your <strong>Vehicle</strong>.</p>
+                <p>Don't just get Third Party Property for the truck and forget Public Liability for your customers. A top-tier policy looks like this:</p>
+                <ul>
+                  <li><strong>Commercial Motor Insurance:</strong> Covers your truck if it's damaged or stolen (Comprehensive).</li>
+                  <li><strong>Public &amp; Products Liability:</strong> Covers you if a customer slips or gets sick from your food.</li>
+                  <li><strong>Business Interruption:</strong> Keeps cash flow moving if you can't trade due to an insured event.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Requirements -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Food truck insurance requirements? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p><strong>Advisor's Take:</strong> For getting permitted and secured, here is your quick guide:</p>
+                <ul>
+                  <li><strong>Public Liability ($20M):</strong> Required for almost all council permits and festival entry.</li>
+                  <li><strong>Third Party Property / Comprehensive Motor:</strong> Required to drive on the road.</li>
+                  <li><strong>Workers Compensation:</strong> Required by law in most states if employing staff (even casual staff!).</li>
+                </ul>
+                <p>With those on hand, you’re green-lit and ready to roll!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. What is food truck insurance in Australia? -->
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What is food truck insurance in Australia? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Food truck insurance is a specialised policy designed to protect mobile food businesses from risks such as vehicle damage, public liability claims, equipment loss, fire, theft, and business interruption.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Is food truck insurance mandatory in Australia? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Public liability insurance is usually mandatory to operate at councils, events, and markets across Australia. Vehicle insurance is also legally required if the truck is driven on public roads.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What does food truck insurance typically cover? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Food truck insurance can include vehicle insurance, public liability, product liability, equipment cover, stock spoilage, fire and theft, and optional business interruption protection.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">How much is food truck insurance cost in Australia? (Standard) <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>The amount changes based on truck value, location, turnover and cover level. The average food truck insurance cost ranges from a few hundred dollars per year and goes up depending on specific risks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Do I need public liability and product liability insurance on a food truck? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Public liability insurance covers any injuries or damage caused to third parties and product liability deals with claims resulting from food poisoning or contaminated food that has been sold by the business.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Is my food truck car insurance included in a regular policy? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>No. A standard car policy will not be sufficient. You require a specialist commercial food truck or commercial motor insurance policy that covers your truck and its fitted equipment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What if I work in a food truck – Do you cover cooking equipment and fit-outs? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Built in and portable equipment– Most policies cover fixed as well as detachable things such as grills, fryers, refrigerators, coffee machines etc. (subject to policy restrictions & Conditions).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Does food truck insurance cover fire and theft? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. fire and theft protection -Insurance might come with or you can add fire and theft insurance to protect your food truck, equipment, and inventory from unforeseen losses.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Does it cover spoilage of stock and food? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Some food truck policies include stock and spoilage insurance, which are designed to cover you for loss caused by power failure, refrigeration breakdown or insured events.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Can you insure a coffee van under food truck insurance? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Absolutely. Food truck insurance isn’t just for trucks—it covers coffee vans, mobile cafés, and even those beverage trailers you see at events.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Does food truck insurance cover events and festivals? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yep. As long as you let your insurer know and get approval, public and product liability insurance usually protects you at markets, festivals, and other events.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">What if a customer gets sick from my food? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Product liability insurance steps in here. If someone gets sick from something you sold, your policy helps with legal fees and compensation, as long as you stick to the terms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Can I insure more than one food truck on the same policy? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Many issuers provide fleet and multi-vehicle policies, which can be smaller priced for businesses with more than a sing food truck or van.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Can I get business interruption for my food truck? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Business interruption insurance may be able to replace lost income when your food truck is unable to operate due to an insured event such as fire or significant damage.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Do I need coverage if my food truck is parked or in storage? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. The risk of things like fire, theft and vandalism can all happen when the truck is turned off, so it’s important that your insurance policy doesn’t stop working just because your engine does.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Is my food truck insurance policy customisable? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Yes. Policies can be customised to reflect your size of business, menu type and from where you operate (your premises may have a lower risk profile than catering or delivering food directly) – all these factors are taken into account when calculating your premium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">How quickly can I get food truck insurance in Australia? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Many brokers offer fast quotes and same-day cover, allowing you to start trading quickly once payment is completed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Does food truck insurance cover employees? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>Optional workers compensation or personal accident cover can be added to protect employees and contractors working in or around your food truck.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">Why should I use a specialist food truck insurance broker? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>A specialist broker understands council requirements, event rules, and food-specific risks, helping you get the right cover at competitive premiums.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="idx2-faq-item">
+            <button class="idx2-faq-question">How do I get a food truck insurance quote in Australia? <i class="fas fa-chevron-down"></i></button>
+            <div class="idx2-faq-answer">
+              <div class="idx2-faq-answer-content">
+                <p>You can get a quote by contacting a specialist broker online or by phone, providing details such as truck value, turnover, locations, and required covers.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container text-center">
+      <h2 class="animate-bounce" style="font-family: 'Fredoka', sans-serif;">Ready to Roll?</h2>
+      <p style="font-family: 'Open Sans', sans-serif;">Get your quote today and get back to cooking!</p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#form">Get a Quote</a>
+        <a href="commercial-food-truck-insurance.html">Commercial Food Truck Insurance</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.cbn.au/privacy-policy">Privacy Policy</a>
+        <a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of Practice</a>
+        <a target="_blank" href="assets/FSG___iLink_Insurance_Brokers_Pty_Ltd_V024_30_August_2025.pdf">
+          Financial Services Guide</a>
+      </div>
+
+      <p class="copyright">
+        &copy; <span id="year"></span> iLink Food Truck Insurance. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

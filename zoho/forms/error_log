@@ -1,0 +1,362 @@
+[02-Dec-2025 07:55:07 America/Chicago] ========================================
+[02-Dec-2025 07:55:07 America/Chicago] NEW FORM SUBMISSION - 2025-12-02 07:55:07
+[02-Dec-2025 07:55:07 America/Chicago] ========================================
+[02-Dec-2025 07:55:07 America/Chicago] REQUEST METHOD: POST
+[02-Dec-2025 07:55:07 America/Chicago] FULL POST DATA: Array
+(
+    [full_name] => Madhu
+    [company_name] => test
+    [contact_number] => 12345
+    [email_id] => t@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+            [2] => business-interruption
+            [3] => personal-accident
+        )
+
+)
+
+[02-Dec-2025 07:55:07 America/Chicago] ----------------------------------------
+[02-Dec-2025 07:55:07 America/Chicago] ✓ coverage_required IS SET
+[02-Dec-2025 07:55:07 America/Chicago] Type: array
+[02-Dec-2025 07:55:07 America/Chicago] Is Array: YES
+[02-Dec-2025 07:55:07 America/Chicago] Array Count: 4
+[02-Dec-2025 07:55:07 America/Chicago] Array Values: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 07:55:07 America/Chicago] Imploded: food-truck-van, liability, business-interruption, personal-accident
+[02-Dec-2025 07:55:07 America/Chicago] ========================================
+[02-Dec-2025 07:55:08 America/Chicago] === mapFormFields Debug ===
+[02-Dec-2025 07:55:08 America/Chicago] Received coverage: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 07:55:08 America/Chicago] Coverage Array: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 07:55:08 America/Chicago] Coverage DB String: 'food-truck-van, liability, business-interruption, personal-accident'
+[02-Dec-2025 07:55:08 America/Chicago] Coverage DB String Length: 67
+[02-Dec-2025 07:55:08 America/Chicago] ===========================
+[02-Dec-2025 07:55:08 America/Chicago] === Database Insert Debug ===
+[02-Dec-2025 07:55:08 America/Chicago] Attempting to insert coverage: 'food-truck-van, liability, business-interruption, personal-accident'
+[02-Dec-2025 07:55:08 America/Chicago] Database insert result: SUCCESS
+[02-Dec-2025 07:55:08 America/Chicago] Last Insert ID: 24
+[02-Dec-2025 07:55:08 America/Chicago] =============================
+[02-Dec-2025 07:55:08 America/Chicago] Database insert successful, attempting Zoho push...
+[02-Dec-2025 07:55:10 America/Chicago] Zoho push successful, redirecting to thank you page
+[02-Dec-2025 08:00:38 America/Chicago] ========================================
+[02-Dec-2025 08:00:38 America/Chicago] NEW FORM SUBMISSION - 2025-12-02 08:00:38
+[02-Dec-2025 08:00:38 America/Chicago] ========================================
+[02-Dec-2025 08:00:38 America/Chicago] REQUEST METHOD: POST
+[02-Dec-2025 08:00:38 America/Chicago] FULL POST DATA: Array
+(
+    [full_name] => Madhu
+    [company_name] => test
+    [contact_number] => 12345
+    [email_id] => t@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+            [2] => business-interruption
+            [3] => personal-accident
+        )
+
+)
+
+[02-Dec-2025 08:00:38 America/Chicago] ----------------------------------------
+[02-Dec-2025 08:00:38 America/Chicago] ✓ coverage_required IS SET
+[02-Dec-2025 08:00:38 America/Chicago] Type: array
+[02-Dec-2025 08:00:38 America/Chicago] Is Array: YES
+[02-Dec-2025 08:00:38 America/Chicago] Array Count: 4
+[02-Dec-2025 08:00:38 America/Chicago] Array Values: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 08:00:38 America/Chicago] Imploded: food-truck-van, liability, business-interruption, personal-accident
+[02-Dec-2025 08:00:38 America/Chicago] ========================================
+[02-Dec-2025 08:00:38 America/Chicago] === mapFormFields Debug ===
+[02-Dec-2025 08:00:38 America/Chicago] Received coverage: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 08:00:38 America/Chicago] Coverage Array: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+    [3] => personal-accident
+)
+
+[02-Dec-2025 08:00:38 America/Chicago] Coverage DB String: 'food-truck-van, liability, business-interruption, personal-accident'
+[02-Dec-2025 08:00:38 America/Chicago] Coverage DB String Length: 67
+[02-Dec-2025 08:00:38 America/Chicago] ===========================
+[02-Dec-2025 08:00:38 America/Chicago] === Database Insert Debug ===
+[02-Dec-2025 08:00:38 America/Chicago] Attempting to insert coverage: 'food-truck-van, liability, business-interruption, personal-accident'
+[02-Dec-2025 08:00:38 America/Chicago] Database insert result: SUCCESS
+[02-Dec-2025 08:00:38 America/Chicago] Last Insert ID: 25
+[02-Dec-2025 08:00:38 America/Chicago] =============================
+[02-Dec-2025 08:00:38 America/Chicago] Database insert successful, attempting Zoho push...
+[02-Dec-2025 08:00:40 America/Chicago] Zoho push successful, redirecting to thank you page
+[02-Dec-2025 08:01:28 America/Chicago] Received POST data: Array
+(
+    [full_name] => madhu
+    [company_name] => test
+    [contact_number] => 987654321
+    [email_id] => mad@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+            [2] => business-interruption
+        )
+
+)
+
+[02-Dec-2025 08:01:28 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+    [2] => business-interruption
+)
+
+[08-Dec-2025 19:48:26 America/Chicago] Received POST data: Array
+(
+    [full_name] => Nino Balsamo
+    [company_name] => ik padrjno
+    [contact_number] => 0406130060
+    [email_id] => antoninobalsamo@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+        )
+
+)
+
+[08-Dec-2025 19:48:26 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+)
+
+[10-Dec-2025 23:36:25 America/Chicago] Received POST data: Array
+(
+    [full_name] => anneke and casey vergers
+    [company_name] => The Dutch Poffertjes shop 2 trailers
+    [contact_number] => 55463361
+    [email_id] => annekevergers@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+        )
+
+)
+
+[10-Dec-2025 23:36:25 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+)
+
+[16-Jan-2026 22:15:42 America/Chicago] Received POST data: Array
+(
+    [full_name] => Wazimraja Basheer Ahamed
+    [company_name] => Biryani Stories Aus pty ltd
+    [contact_number] => 0450421013
+    [email_id] => wazking@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+        )
+
+)
+
+[16-Jan-2026 22:15:42 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+)
+
+[27-Jan-2026 07:44:45 America/Chicago] Received POST data: Array
+(
+    [full_name] => Gayathri Test
+    [company_name] => Smart Solutions digi
+    [contact_number] => 11234567890
+    [email_id] => test@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => liability
+            [1] => business-interruption
+            [2] => personal-accident
+        )
+
+)
+
+[27-Jan-2026 07:44:45 America/Chicago] Coverage Input: Array
+(
+    [0] => liability
+    [1] => business-interruption
+    [2] => personal-accident
+)
+
+[27-Jan-2026 07:45:34 America/Chicago] Received POST data: Array
+(
+    [full_name] => Gayathri Test
+    [company_name] => Smart Solutions digi
+    [contact_number] => 11234567890
+    [email_id] => test@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => liability
+            [1] => personal-accident
+        )
+
+)
+
+[27-Jan-2026 07:45:34 America/Chicago] Coverage Input: Array
+(
+    [0] => liability
+    [1] => personal-accident
+)
+
+[27-Jan-2026 07:45:37 America/Chicago] Received POST data: Array
+(
+    [full_name] => Gayathri Test
+    [company_name] => Smart Solutions digi
+    [contact_number] => 11234567890
+    [email_id] => test@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => liability
+            [1] => personal-accident
+        )
+
+)
+
+[27-Jan-2026 07:45:37 America/Chicago] Coverage Input: Array
+(
+    [0] => liability
+    [1] => personal-accident
+)
+
+[27-Jan-2026 07:45:40 America/Chicago] Received POST data: Array
+(
+    [full_name] => Gayathri Test
+    [company_name] => Smart Solutions digi
+    [contact_number] => 11234567890
+    [email_id] => test@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => liability
+            [1] => personal-accident
+        )
+
+)
+
+[27-Jan-2026 07:45:40 America/Chicago] Coverage Input: Array
+(
+    [0] => liability
+    [1] => personal-accident
+)
+
+[25-Feb-2026 02:44:11 America/Chicago] Received POST data: Array
+(
+    [full_name] => james
+    [company_name] => the Wandering cafe
+    [contact_number] => 0438417262
+    [email_id] => jamesk_88@outlook.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+        )
+
+)
+
+[25-Feb-2026 02:44:11 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+)
+
+[07-Mar-2026 16:15:40 America/Chicago] Received POST data: Array
+(
+    [full_name] => Ben
+    [company_name] => Soda Spot
+    [contact_number] => 0451665716
+    [email_id] => sodaspot@yahoo.com
+    [coverage_required] => Array
+        (
+            [0] => liability
+        )
+
+)
+
+[07-Mar-2026 16:15:40 America/Chicago] Coverage Input: Array
+(
+    [0] => liability
+)
+
+[26-Mar-2026 21:46:49 America/Chicago] Received POST data: Array
+(
+    [full_name] => Stephen Brooks
+    [company_name] => Brooks Finger Food
+    [contact_number] => 0467876134
+    [email_id] => srjbrooks1@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+        )
+
+)
+
+[26-Mar-2026 21:46:49 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+)
+
+[27-Mar-2026 00:26:59 America/Chicago] Received POST data: Array
+(
+    [full_name] => Matheus Garcia
+    [company_name] => Mystica Burgers
+    [contact_number] => 0431093550
+    [email_id] => mysticaburgers@gmail.com
+    [coverage_required] => Array
+        (
+            [0] => food-truck-van
+            [1] => liability
+        )
+
+)
+
+[27-Mar-2026 00:26:59 America/Chicago] Coverage Input: Array
+(
+    [0] => food-truck-van
+    [1] => liability
+)
+
