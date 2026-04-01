@@ -8,13 +8,17 @@
   --idx2-text-muted: #212529;
   --idx2-font-heading: 'Inter', sans-serif;
   --idx2-font-body: 'Poppins', sans-serif;
-  --idx2-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --idx2-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.09);
   --idx2-radius: 20px;
 }
 
-p{
+p {
   font-size: 16px;
   color: #212529;
+}
+
+.idx2-page .btn-nav {
+  background-color: var(--idx2-primary) !important;
 }
 
 .idx2-h2 {
@@ -407,15 +411,20 @@ p{
 }
 
 @media (max-width: 1024px) {
-  .idx2-grid-5, .idx2-grid-3-strict {
+
+  .idx2-grid-5,
+  .idx2-grid-3-strict {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .idx2-grid-5, .idx2-grid-3-strict {
+
+  .idx2-grid-5,
+  .idx2-grid-3-strict {
     grid-template-columns: 1fr;
   }
+
   .idx2-grid-2 {
     grid-template-columns: 1fr;
   }
@@ -501,7 +510,8 @@ p{
 }
 
 .idx2-faq-item.active .idx2-faq-answer {
-  max-height: 1000px; /* Increased for longer advisor content */
+  max-height: 1000px;
+  /* Increased for longer advisor content */
 }
 
 .idx2-faq-answer-content {
@@ -590,6 +600,7 @@ p{
 .idx2-page .idx2-btn-accent,
 .idx2-page .form-header h3 {
   font-family: var(--idx2-font-heading) !important;
+
 }
 
 .idx2-page .hero-content p,
