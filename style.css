@@ -348,13 +348,13 @@ img {
 /* Responsive adjustments for Hero */
 @media (max-width: 992px) {
   .hero {
-    min-height: 60vh;
+    min-height: 75vh;
     /* More compact on mobile */
     height: auto;
     /* Allow content to dictate height if needed */
     padding-top: 100px;
     /* Account for fixed header */
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
   }
 
   .hero-content {
