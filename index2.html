@@ -969,6 +969,19 @@
   <script src="script.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reroute quote form clicks on mobile
+    document.querySelectorAll('a[href="#quoteForm"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          const mobileForm = document.getElementById('mobile-quote-section');
+          if (mobileForm) {
+            mobileForm.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
   </script>
 </body>
 
