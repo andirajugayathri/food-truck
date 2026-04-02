@@ -59,7 +59,7 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#cover">What We Cover</a></li>
+          <li><a href="#coverages">What We Cover</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#quoteForm" class="btn-nav">Get a Quote</a></li>
         </ul>
@@ -157,8 +157,68 @@
       </div>
     </header>
 
+    <!-- Mobile Quote Section (Visible only on mobile) -->
+    <section id="mobile-quote-section" class="idx2-section idx2-bg-cream mobile-quote-section">
+      <div class="idx2-container">
+        <div class="contact-form-container" id="quoteFormMobile">
+          <div class="form-header">
+            <h3>Quick Quote</h3>
+            <p>Get covered in minutes</p>
+          </div>
+          <form class="simple-form" id="formMobile" action="zoho/forms/sendmail.php" method="POST">
+            <div class="form-row">
+              <input type="text" name="full_name" placeholder="Full Name" required />
+              <input type="text" name="company_name" placeholder="Company Name" />
+            </div>
+            <div class="form-row">
+              <input type="tel" name="contact_number" placeholder="Contact Number" required />
+              <input type="email" name="email_id" placeholder="Email ID" required />
+            </div>
+            <div class="checkbox-group" style="margin-bottom: 15px; text-align: left; width: 100%;">
+              <div style="margin-bottom: 8px; font-weight: 600; color: #333;">Coverage Required</div>
+              <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+                <label
+                  style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #333; margin: 0; padding: 0;">
+                  <input type="checkbox" name="coverage_required[]" value="food-truck-van"
+                    style="width: auto; height: auto; margin: 0; padding: 0;" />
+                  <span>Food Truck/Van</span>
+                </label>
+                <label
+                  style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #333; margin: 0; padding: 0;">
+                  <input type="checkbox" name="coverage_required[]" value="liability"
+                    style="width: auto; height: auto; margin: 0; padding: 0;" />
+                  <span>Public and Products Liability</span>
+                </label>
+                <label
+                  style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #333; margin: 0; padding: 0;">
+                  <input type="checkbox" name="coverage_required[]" value="business-interruption"
+                    style="width: auto; height: auto; margin: 0; padding: 0;" />
+                  <span>Business Interruption</span>
+                </label>
+                <label
+                  style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #333; margin: 0; padding: 0;">
+                  <input type="checkbox" name="coverage_required[]" value="personal-accident"
+                    style="width: auto; height: auto; margin: 0; padding: 0;" />
+                  <span>Personal Accident and Sickness cover</span>
+                </label>
+                <label
+                  style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #333; margin: 0; padding: 0;">
+                  <input type="checkbox" name="coverage_required[]" value="all"
+                    style="width: auto; height: auto; margin: 0; padding: 0;" />
+                  <span>All of the above</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="idx2-btn-accent" style="width: 100%; border: none;">
+              Get My Quote
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- NEW SECTION: Why Food Truck Insurance Is Important -->
-    <section id="importance" class="idx2-section idx2-bg-white">
+    <section id="about" class="idx2-section idx2-bg-white">
       <div class="idx2-container">
         <div class="idx2-split">
           <div class="idx2-split-content">
@@ -213,6 +273,9 @@
           <p class="idx2-lead mt-5">
             Even part-time or weekend operators need cover whenever they are trading or on the road.
           </p>
+          <div class="text-center mt-5">
+            <a href="#quoteForm" class="idx2-btn-accent">Get Your Free Quote Now <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </section>
@@ -277,7 +340,8 @@
           </div>
           <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
             <div>
-              <a href="#quoteForm" class="idx2-btn-accent">Get Your Free Quote Now <i class="fas fa-arrow-right"></i></a>
+              <a href="#quoteForm" class="idx2-btn-accent">Get Your Free Quote Now <i
+                  class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -488,28 +552,36 @@
             <div class="idx2-timeline-icon"><i class="fas fa-file-invoice"></i></div>
             <div class="idx2-timeline-content">
               <h3 class="idx2-timeline-h3">Request a Fast Quote</h3>
-              <p>Start by filling out our quick online quote form or calling our team. It takes less than 3 minutes to get started. We’ll ask a few simple questions about your food truck, trailer, or coffee van to understand your needs.</p>
+              <p>Start by filling out our quick online quote form or calling our team. It takes less than 3 minutes to
+                get started. We’ll ask a few simple questions about your food truck, trailer, or coffee van to
+                understand your needs.</p>
             </div>
           </div>
           <div class="idx2-timeline-step">
             <div class="idx2-timeline-icon"><i class="fas fa-search-dollar"></i></div>
             <div class="idx2-timeline-content">
               <h3 class="idx2-timeline-h3">Tell Us About Your Business</h3>
-              <p>Provide details about your vehicle, fit-out, cooking equipment, and where you operate (markets, events, street trading, etc.). This helps us tailor a food truck insurance policy that fits your exact business — no unnecessary extras.</p>
+              <p>Provide details about your vehicle, fit-out, cooking equipment, and where you operate (markets, events,
+                street trading, etc.). This helps us tailor a food truck insurance policy that fits your exact business
+                — no unnecessary extras.</p>
             </div>
           </div>
           <div class="idx2-timeline-step">
             <div class="idx2-timeline-icon"><i class="fas fa-edit"></i></div>
             <div class="idx2-timeline-content">
               <h3 class="idx2-timeline-h3">Receive Your Tailored Insurance Quote</h3>
-              <p>Our specialist brokers compare options from leading insurers to find you the best cover at the most competitive price. You’ll receive a customised quote that includes everything from public liability to equipment and vehicle cover.</p>
+              <p>Our specialist brokers compare options from leading insurers to find you the best cover at the most
+                competitive price. You’ll receive a customised quote that includes everything from public liability to
+                equipment and vehicle cover.</p>
             </div>
           </div>
           <div class="idx2-timeline-step">
             <div class="idx2-timeline-icon"><i class="fas fa-check-double"></i></div>
             <div class="idx2-timeline-content">
               <h3 class="idx2-timeline-h3">Get Covered — Often Same Day</h3>
-              <p>Once you’re happy with your quote, simply accept your policy and you can be covered the same day. We’ll issue your Certificate of Currency quickly, so you’re ready for councils, events, and festivals across Australia.</p>
+              <p>Once you’re happy with your quote, simply accept your policy and you can be covered the same day. We’ll
+                issue your Certificate of Currency quickly, so you’re ready for councils, events, and festivals across
+                Australia.</p>
             </div>
           </div>
         </div>
