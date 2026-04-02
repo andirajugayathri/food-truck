@@ -87,7 +87,7 @@ p {
 }
 
 .idx2-feature-card:hover .idx2-icon-box {
-  transform: translateY(-5px);
+ 
   color: var(--idx2-primary);
   background: rgba(198, 81, 0, 0.15);
 }
