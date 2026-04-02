@@ -16,7 +16,6 @@
         rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index2.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWH4H9NRTN"></script>
@@ -34,18 +33,18 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
+            <a href="index2.html" class="logo">
                 <img src="assets/Food Truck Ins_Logo_Tran.webp" alt="iLink Food Truck Insurance">
             </a>
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#cover">What We Cover</a></li>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="index2.html#about">About Us</a></li>
+                <li><a href="index2.html#coverages">What We Cover</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="#form" class="btn-nav">Get a Quote</a></li>
+                <li><a href="index2.html#quoteForm" class="btn-nav">Get a Quote</a></li>
             </ul>
         </div>
     </nav>
@@ -128,32 +127,41 @@
     </section>
 
     <!-- CTA / Footer -->
-    <footer id="contact" class="footer">
+    <footer class="footer" id="contact">
         <div class="container text-center">
-            <h2 class="animate-bounce">Ready to Roll?</h2>
-            <p>Get your quote today and get back to cooking!</p>
+            <h2 class="animate-bounce" style="font-family: 'Fredoka', sans-serif;">Ready to Roll?</h2>
+            <p style="font-family: 'Open Sans', sans-serif;">Get your quote today and get back to cooking!</p>
 
             <div class="footer-links">
-                <a href="index.html">Home</a>
+                <a href="index2.html">Home</a>
                 <a href="contact.html">Contact Us</a>
-                <a href="index.html#contact">Get a Quote</a>
-                <a href="commercial-food-truck-insurance.html">Commercial Food Truck Insurance </a>
-                <a href="index.html#about">About Us</a>
+                <a href="index2.html#quoteForm">Get a Quote</a>
+                <a href="commercial-food-truck-insurance.html">Commercial Food Truck Insurance</a>
             </div>
 
-            <!-- <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-            </div> -->
-            <p class="copyright">&copy;
-                <script>document.write(new Date().getFullYear());</script> iLink Food Truck Insurance. All rights
-                reserved.
+            <div class="footer-links">
+                <a href="https://www.cbn.au/privacy-policy">Privacy Policy</a>
+                <a href="https://www.niba.com.au/insurance-brokers-code-of-practice">Insurance Brokers Code of
+                    Practice</a>
+                <a target="_blank" href="assets/FSG___iLink_Insurance_Brokers_Pty_Ltd_V024_30_August_2025.pdf">
+                    Financial Services Guide</a>
+            </div>
+
+            <div class="footer-disclaimer"
+                style="font-size: 0.85rem; opacity: 0.8; margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5; color: #fff;">
+                <p>This information is general only and not personal advice. Please check the PDS and policy wording
+                    before deciding. For details about our services and remuneration, see our FSG on the website or ask
+                    us for a copy.</p>
+            </div>
+
+            <p class="copyright">
+                &copy; <span id="year"></span> iLink Food Truck Insurance. All rights reserved.
             </p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 
 </html>
