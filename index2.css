@@ -72,19 +72,41 @@ p {
   padding: 0 20px;
 }
 
-/* Replacement for Card Containers (Integrated Design) */
-.idx2-feature-item {
+/* Custom Feature Card Styling */
+.idx2-feature-card {
   position: relative;
+  background: var(--idx2-bg-white);
+  padding: 30px;
+  border-radius: var(--idx2-radius);
+  box-shadow: var(--idx2-shadow-soft);
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.idx2-feature-item:hover .idx2-icon-box {
+.idx2-feature-card:hover .idx2-icon-box {
   transform: translateY(-5px);
   color: var(--idx2-primary);
   background: rgba(198, 81, 0, 0.15);
+}
+
+.idx2-feature-card-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.idx2-feature-card-header .idx2-icon-box {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.idx2-feature-card-header .idx2-h3 {
+  margin-bottom: 0;
 }
 
 .idx2-feature-inline {
@@ -579,7 +601,8 @@ p {
     height: 50px;
     font-size: 1.2rem;
   }
-  .idx2-page .btn{
+
+  .idx2-page .btn {
     font-size: 12px;
   }
 }
@@ -612,4 +635,85 @@ p {
 .idx2-page .form-header p {
   font-family: var(--idx2-font-body) !important;
   color: #ffffff;
+}
+
+/* Horizontal Timeline Design */
+.idx2-timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.idx2-timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  border-top: 2px dashed var(--idx2-secondary);
+  z-index: 0;
+}
+
+.idx2-timeline-step {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.idx2-timeline-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--idx2-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border: 4px solid var(--idx2-bg-white);
+  box-shadow: 0 0 0 10px var(--idx2-bg-white);
+}
+
+.idx2-timeline-content {
+  text-align: center;
+}
+
+.idx2-timeline-h3 {
+  font-size: 1.15rem;
+  color: var(--idx2-secondary);
+  margin-bottom: 10px;
+  font-family: var(--idx2-font-heading);
+  min-height: 50px;
+}
+
+.idx2-timeline-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--idx2-text-muted);
+}
+
+@media (max-width: 768px) {
+  .idx2-timeline-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .idx2-timeline-container::before {
+    display: none;
+  }
+
+  .idx2-timeline-h3 {
+    min-height: auto;
+  }
 }
